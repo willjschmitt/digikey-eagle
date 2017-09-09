@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -459,11 +459,20 @@
 <package name="VM1-038-1AE">
 <pad name="P$1" x="21.59" y="0" drill="3.2" shape="square"/>
 <pad name="P$2" x="-21.59" y="0" drill="3.2" shape="square"/>
-<wire x1="30.48" y1="12.7" x2="-30.48" y2="12.7" width="0.127" layer="21"/>
-<wire x1="-30.48" y1="12.7" x2="-30.48" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="-30.48" y1="-12.7" x2="30.48" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="30.48" y1="-12.7" x2="30.48" y2="12.7" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="3.81" x2="19.05" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-30" y1="12.5" x2="-30" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="30" y1="-12.5" x2="30" y2="12.5" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="4" x2="12.5" y2="4" width="0.127" layer="21"/>
+<wire x1="-30" y1="-12.5" x2="-5.3" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="-5.3" y1="-12.5" x2="-5.3" y2="-1" width="0.127" layer="21"/>
+<wire x1="-5.3" y1="-1" x2="5.3" y2="-1" width="0.127" layer="21"/>
+<wire x1="5.3" y1="-1" x2="5.3" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="5.3" y1="-12.5" x2="30" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="-30" y1="12.5" x2="-19.3" y2="12.5" width="0.127" layer="21"/>
+<wire x1="-19.3" y1="12.5" x2="-19.3" y2="1" width="0.127" layer="21"/>
+<wire x1="-19.3" y1="1" x2="19.3" y2="1" width="0.127" layer="21"/>
+<wire x1="19.3" y1="1" x2="19.3" y2="12.5" width="0.127" layer="21"/>
+<wire x1="19.3" y1="12.5" x2="30" y2="12.5" width="0.127" layer="21"/>
+<text x="-29.3" y="-11.7" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="6-SMD">
 <wire x1="-3.683" y1="3.302" x2="3.683" y2="3.302" width="0.127" layer="21"/>
