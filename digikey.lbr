@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -545,6 +545,28 @@
 <pad name="P$3" x="8.25" y="-2.55" drill="0.6" diameter="1.4224"/>
 <pad name="P$4" x="14.25" y="-4.5" drill="0.6" diameter="1.4224"/>
 </package>
+<package name="VM2-038-1AE">
+<wire x1="0" y1="0" x2="12.3" y2="0" width="0.127" layer="21"/>
+<wire x1="12.3" y1="0" x2="30" y2="0" width="0.127" layer="21"/>
+<wire x1="30" y1="0" x2="47.7" y2="0" width="0.127" layer="21"/>
+<wire x1="47.7" y1="0" x2="60" y2="0" width="0.127" layer="21"/>
+<wire x1="60" y1="0" x2="60" y2="-38.6" width="0.127" layer="21"/>
+<wire x1="60" y1="-38.6" x2="47.7" y2="-38.6" width="0.127" layer="21"/>
+<wire x1="47.7" y1="-38.6" x2="12.3" y2="-38.6" width="0.127" layer="21"/>
+<wire x1="12.3" y1="-38.6" x2="0" y2="-38.6" width="0.127" layer="21"/>
+<wire x1="0" y1="-38.6" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="10.2" y="-36.6" drill="2.67" shape="square"/>
+<pad name="P$2" x="49.8" y="-36.6" drill="2.67" shape="square"/>
+<pad name="P$3" x="49.8" y="-2" drill="2.67" shape="square"/>
+<pad name="P$4" x="10.2" y="-2" drill="2.67" shape="square"/>
+<wire x1="12.3" y1="-38.6" x2="12.3" y2="-3" width="0.127" layer="21"/>
+<wire x1="12.3" y1="-3" x2="12.3" y2="0" width="0.127" layer="21"/>
+<wire x1="47.7" y1="-38.6" x2="47.7" y2="-3" width="0.127" layer="21"/>
+<wire x1="47.7" y1="-3" x2="47.7" y2="0" width="0.127" layer="21"/>
+<wire x1="12.3" y1="-3" x2="30" y2="-3" width="0.127" layer="21"/>
+<wire x1="30" y1="-3" x2="47.7" y2="-3" width="0.127" layer="21"/>
+<wire x1="30" y1="-3" x2="30" y2="0" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP3004-I/SL">
@@ -885,6 +907,11 @@
 </gates>
 <devices>
 <device name="" package="VM1-038-1AE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HORIZONTAL" package="VM2-038-1AE">
 <technologies>
 <technology name=""/>
 </technologies>
