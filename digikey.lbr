@@ -605,6 +605,23 @@
 <text x="1" y="12" size="1.27" layer="21">UPPER</text>
 <text x="4" y="8" size="1.27" layer="21">LOWER</text>
 </package>
+<package name="PC-MKKDS5/2-9.5">
+<wire x1="4.76" y1="0" x2="23.8" y2="0" width="0.127" layer="21"/>
+<wire x1="23.8" y1="0" x2="23.8" y2="14" width="0.127" layer="21"/>
+<wire x1="23.8" y1="14" x2="19.04" y2="14" width="0.127" layer="21"/>
+<wire x1="19.04" y1="14" x2="19.04" y2="28" width="0.127" layer="21"/>
+<wire x1="19.04" y1="28" x2="0" y2="28" width="0.127" layer="21"/>
+<wire x1="0" y1="28" x2="0" y2="14" width="0.127" layer="21"/>
+<wire x1="0" y1="14" x2="4.76" y2="14" width="0.127" layer="21"/>
+<wire x1="4.76" y1="14" x2="4.76" y2="0" width="0.127" layer="21"/>
+<wire x1="4.76" y1="14" x2="19.04" y2="14" width="0.127" layer="21"/>
+<text x="1" y="15" size="1.27" layer="21">UPPER</text>
+<text x="6" y="12" size="1.27" layer="21">LOWER</text>
+<pad name="P$1" x="9.52" y="7.9" drill="1.3" shape="square"/>
+<pad name="P$2" x="19.04" y="7.9" drill="1.3" shape="square"/>
+<pad name="P$3" x="4.76" y="25.4" drill="1.3" shape="square"/>
+<pad name="P$4" x="14.28" y="25.4" drill="1.3" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP3004-I/SL">
@@ -780,6 +797,21 @@
 <pin name="P$4" x="12.7" y="5.08" length="middle" rot="R180"/>
 <pin name="P$5" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="P$6" x="12.7" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+<symbol name="2PIN-2LEVEL_CONNECTOR">
+<wire x1="0" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="-12.7" y="5.08" length="middle"/>
+<pin name="P$2" x="-12.7" y="0" length="middle"/>
+<pin name="P$3" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="P$4" x="12.7" y="0" length="middle" rot="R180"/>
+<text x="-5.08" y="-2.54" size="1.778" layer="94" rot="R90">LOWER</text>
+<text x="2.54" y="-2.54" size="1.778" layer="94" rot="R90">UPPER</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1093,6 +1125,24 @@
 <connect gate="G$1" pin="P$4" pad="P$4"/>
 <connect gate="G$1" pin="P$5" pad="P$5"/>
 <connect gate="G$1" pin="P$6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PC1719015">
+<gates>
+<gate name="G$1" symbol="2PIN-2LEVEL_CONNECTOR" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="PC-MKKDS5/2-9.5">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
